@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/bootique-examples/bootique-jetty-producer.svg)](https://travis-ci.org/bootique-examples/bootique-kafka-producer)
+[![Build Status](https://travis-ci.org/bootique-examples/bootique-jetty-demo.svg)](https://travis-ci.org/bootique-examples/bootique-jetty-demo)
 
 # bootique-jetty-demo
 
