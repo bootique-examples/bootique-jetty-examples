@@ -2,7 +2,10 @@
 
 # bootique-jetty-demo
 
-An example of Jetty integrated with [Bootique](http://bootique.io). Documentation and configuration reference are [available here](http://bootique.io/docs/0/bootique-jetty-docs/).
+A simple example that explains how to run servlet specification objects on Jetty server integrated with [Bootique](https://bootique.io). 
+
+*Bootique Jetty Documentation and configuration reference are 
+[available here](https://bootique.io/docs/0/bootique-jetty-docs/).*
 
 *For additional help/questions about this example send a message to
 [Bootique forum](https://groups.google.com/forum/#!forum/bootique-user).*
@@ -14,11 +17,9 @@ An example of Jetty integrated with [Bootique](http://bootique.io). Documentatio
 
 ## Build the Demo
 
-TODO:
-
 Here is how to build it:
 
-	
+	git clone git@github.com:bootique-examples/bootique-jetty-demo.git
 	cd bootique-jetty-demo
 	mvn package
 
@@ -40,7 +41,15 @@ Now you can check the options available in your app:
     -s, --server                                        Starts Jetty server.
 
 
+Configure Jetty connector via YAML and run the server with the configuration:
+    
+    java -jar target/bootique-jetty-demo-1.0-SNAPSHOT.jar --server --config=config.yml
 
+If no connectors are provided, Bootique will create a single HTTP connector on port 8080.
 
---server --config=config.yml
+Then open [http://localhost:9999/test?user=user](http://locahost:9999/test?user=user) to do GET request on the server.
+
+In the example one can also find some jUnit tests for the servlet and the resource on Jetty server.
+ 
+
     
