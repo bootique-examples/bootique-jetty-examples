@@ -1,5 +1,8 @@
 package io.bootique.jetty.demo;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebInitParam;
 import javax.servlet.annotation.WebServlet;
@@ -14,8 +17,12 @@ import java.io.PrintWriter;
 })
 public class AnnotatedServlet extends HttpServlet {
 
+    private static Logger LOGGER = LoggerFactory.getLogger(AnnotatedServlet.class);
+
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+
+        LOGGER.info("Do GET request to the Jetty server");
 
         resp.setContentType("text/html;charset=UTF-8");
         PrintWriter pw = resp.getWriter();

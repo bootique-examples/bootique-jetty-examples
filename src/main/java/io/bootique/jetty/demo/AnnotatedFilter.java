@@ -1,9 +1,11 @@
 package io.bootique.jetty.demo;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import javax.servlet.*;
 import javax.servlet.annotation.WebFilter;
 import javax.servlet.annotation.WebInitParam;
-import javax.servlet.http.HttpServletRequest;
 import java.io.IOException;
 
 
@@ -15,6 +17,9 @@ import java.io.IOException;
         }
 )
 public class AnnotatedFilter implements Filter {
+
+    private static Logger LOGGER = LoggerFactory.getLogger(AnnotatedFilter.class);
+
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {
 
@@ -23,9 +28,7 @@ public class AnnotatedFilter implements Filter {
     @Override
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
 
-        if (((HttpServletRequest) request).getSession() == null) {
-            throw new ServletException("Session is null");
-        }
+        LOGGER.info("Filtering of requests to the servlet");
 
         chain.doFilter(request, response);
     }
