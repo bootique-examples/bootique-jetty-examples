@@ -14,7 +14,7 @@ public class App implements Module {
 
     @Override
     public void configure(Binder binder) {
-        JettyModule.extend(binder).addServlet(AnnotatedServlet.class);
+        JettyModule.extend(binder).addServlet(AnnotatedServlet.class).addFilter(AnnotatedFilter.class);
         JerseyModule.extend(binder).addResource(HelloResource.class);
     }
 }
