@@ -6,7 +6,6 @@ A simple example that explains how to run servlet specification objects on Jetty
 
 *Bootique Jetty Documentation and configuration reference are 
 [available here](https://bootique.io/docs/0/bootique-jetty-docs/).*
-
 *For additional help/questions about this example send a message to
 [Bootique forum](https://groups.google.com/forum/#!forum/bootique-user).*
 
