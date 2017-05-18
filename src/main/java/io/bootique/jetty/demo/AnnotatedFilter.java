@@ -5,16 +5,12 @@ import org.slf4j.LoggerFactory;
 
 import javax.servlet.*;
 import javax.servlet.annotation.WebFilter;
-import javax.servlet.annotation.WebInitParam;
 import java.io.IOException;
 
 
 @WebFilter(
         filterName = "f1",
-        urlPatterns = "/test/*",
-        initParams = {
-                @WebInitParam(name = "user", value = "user")
-        }
+        urlPatterns = "/test/*"
 )
 public class AnnotatedFilter implements Filter {
 
