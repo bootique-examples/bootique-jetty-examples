@@ -19,7 +19,7 @@
         <maven.compiler.target>1.8</maven.compiler.target>
 
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <main.class>io.bootique.jetty.demo.App</main.class>
+        <main.class>io.bootique.jetty.demo.Application</main.class>
     </properties>
 
     <dependencyManagement>
@@ -42,10 +42,6 @@
         <dependency>
             <groupId>io.bootique.jetty</groupId>
             <artifactId>bootique-jetty</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>io.bootique.jersey</groupId>
-            <artifactId>bootique-jersey</artifactId>
         </dependency>
         <dependency>
             <groupId>io.bootique.logback</groupId>
