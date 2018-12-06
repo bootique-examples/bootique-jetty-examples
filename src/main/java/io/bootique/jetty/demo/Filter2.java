@@ -16,8 +16,7 @@ public class Filter2 implements Filter {
     private static Logger LOGGER = LoggerFactory.getLogger(Filter2.class);
 
     @Override
-    public void init(FilterConfig filterConfig) throws ServletException {
-
+    public void init(FilterConfig filterConfig) {
     }
 
     @Override
@@ -29,6 +28,5 @@ public class Filter2 implements Filter {
 
     @Override
     public void destroy() {
-
     }
 }
