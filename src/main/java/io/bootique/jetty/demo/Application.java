@@ -1,20 +1,20 @@
 package io.bootique.jetty.demo;
 
-import com.google.inject.Binder;
-import com.google.inject.Module;
-import com.google.inject.Provides;
-import com.google.inject.Singleton;
-import com.google.inject.TypeLiteral;
+import io.bootique.BaseModule;
 import io.bootique.Bootique;
+import io.bootique.di.Binder;
+import io.bootique.di.Provides;
+import io.bootique.di.TypeLiteral;
 import io.bootique.jetty.JettyModule;
 import io.bootique.jetty.MappedFilter;
 import io.bootique.jetty.MappedServlet;
 
+import javax.inject.Singleton;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Application implements Module {
+public class Application extends BaseModule {
 
     public static void main(String[] args) {
         Bootique.app(args)

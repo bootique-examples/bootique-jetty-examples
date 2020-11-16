@@ -24,7 +24,7 @@ Here is how to build it:
 
 Now you can check the options available in your app:
 
-    java -jar target/bootique-jetty-demo-1.0-SNAPSHOT.jar
+    java -jar target/bootique-jetty-demo-2.0.jar
     
     Option                                              Description
     ------                                              -----------    
@@ -58,7 +58,7 @@ Provide YAML config:
 
 Run the server:
     
-    java -jar target/bootique-jetty-demo-1.0-SNAPSHOT.jar --server --config=config.yml
+    java -jar target/bootique-jetty-demo-2.0.jar --server --config=config.yml
 
 Then open:
 1. [http://192.168.1.13:9999/myapp/s1?p1=1&p2=2](http://192.168.1.13:9999/myapp/s1?p1=1&p2=2) to do GET request on the server mapped on servlet1
