@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/bootique-examples/bootique-jetty-demo.svg)](https://travis-ci.org/bootique-examples/bootique-jetty-demo)
+[![verify](https://github.com/bootique-examples/bootique-jetty-demo/actions/workflows/verify.yml/badge.svg)](https://github.com/bootique-examples/bootique-jetty-demo/actions/workflows/verify.yml)
 
 # bootique-jetty-demo
 
