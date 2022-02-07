@@ -9,11 +9,13 @@ import javax.servlet.FilterConfig;
 import javax.servlet.ServletException;
 import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
+import javax.servlet.annotation.WebFilter;
 import java.io.IOException;
 
-public class Filter1 implements Filter {
+@WebFilter(filterName = "filter1", urlPatterns = "/s1/*")
+public class AnnotatedFilter1 implements Filter {
 
-    private static Logger LOGGER = LoggerFactory.getLogger(Filter1.class);
+    static final Logger LOGGER = LoggerFactory.getLogger(AnnotatedFilter1.class);
 
     @Override
     public void init(FilterConfig filterConfig) {
@@ -21,8 +23,7 @@ public class Filter1 implements Filter {
 
     @Override
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
-        LOGGER.info("Filtering of requests to the servlet1");
-
+        LOGGER.info("GET filter1");
         chain.doFilter(request, response);
     }
 

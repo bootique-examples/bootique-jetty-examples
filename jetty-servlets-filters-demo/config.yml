@@ -7,12 +7,9 @@ jetty:
      # override code settings for the servlet "servlet2"    
     servlet2:
       urlPatterns:
-        - '/ss2'
-      params:
-        p3: v33
-        p4: v44
+        - '/s2alt'
   filters:
     # override filter "filter2" code settings     
     filter2:
       urlPatterns:
-        - '/ss2/*'
+        - '/s2alt/*'

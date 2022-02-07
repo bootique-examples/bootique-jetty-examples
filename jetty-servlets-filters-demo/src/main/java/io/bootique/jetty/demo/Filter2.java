@@ -13,7 +13,7 @@ import java.io.IOException;
 
 public class Filter2 implements Filter {
 
-    private static Logger LOGGER = LoggerFactory.getLogger(Filter2.class);
+    static final Logger LOGGER = LoggerFactory.getLogger(Filter2.class);
 
     @Override
     public void init(FilterConfig filterConfig) {
@@ -21,8 +21,7 @@ public class Filter2 implements Filter {
 
     @Override
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
-        LOGGER.info("Filtering of requests to the servlet2");
-
+        LOGGER.info("GET filter2");
         chain.doFilter(request, response);
     }
 
