@@ -4,7 +4,7 @@ A simple example that explains how to run servlet specification objects on the J
 
 ## Prerequisites
 
-* Java 11 or newer
+* Java 17 or newer
 * Apache Maven
 
 ## Build the Demo
