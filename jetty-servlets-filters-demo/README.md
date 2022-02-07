@@ -48,7 +48,7 @@ java -jar target/jetty-servlets-filters-demo-X.XX.jar --server --config=config.y
 Trying opening the following URLs and watch the logs:
 
 * [http://127.0.0.1:9999/myapp/s1](http://127.0.0.1:9999/myapp/s1) should succeed
- [http://127.0.0.1:9999/myapp/s2](http://127.0.0.1:9999/myapp/s2) should fail with HTTP 404, as "servlet2" path specified in the code is overridden with `config.yml`
+* [http://127.0.0.1:9999/myapp/s2](http://127.0.0.1:9999/myapp/s2) should fail with HTTP 404, as "servlet2" path specified in the code is overridden with `config.yml`
 * [http://127.0.0.1:9999/myapp/s2alt](http://127.0.0.1:9999/myapp/s2alt) should succeed
 
 
