@@ -4,9 +4,7 @@
 .externalToolBuilders
 .DS_Store
 .metadata
-.recommenders
 target
 *.iml
 .idea
 dependency-reduced-pom.xml
-hs_err_pid*
