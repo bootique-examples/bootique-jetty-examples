@@ -1,11 +1,12 @@
 [![verify](https://github.com/bootique-examples/bootique-jetty-examples/actions/workflows/verify.yml/badge.svg)](https://github.com/bootique-examples/bootique-jetty-examples/actions/workflows/verify.yml)
 
-# Bootique 3.x Jetty Examples
+# Bootique 4.x Jetty Examples
 
 This is an example Bootique Jetty app.
 
 Different Git branches contain example code for different versions of Bootique:
 
+* [4.x](https://github.com/bootique-examples/bootique-jetty-examples/tree/4.x)
 * [3.x](https://github.com/bootique-examples/bootique-jetty-examples/tree/3.x)
 * [2.x](https://github.com/bootique-examples/bootique-jetty-examples/tree/2.x)
 * [1.x](https://github.com/bootique-examples/bootique-jetty-examples/tree/1.x)
@@ -14,7 +15,7 @@ Different Git branches contain example code for different versions of Bootique:
 
 To build and run the project, ensure you have the following installed on your machine:
 
-* Java 11 or newer
+* Java 21 or newer
 * Maven
 
 and then follow these steps:
@@ -37,12 +38,12 @@ Notice, how the tests started Jetty on the spot on a random port and executed re
 
 The following command prints a help message with supported options:
 ```bash  
-java -jar target/bootique-jetty-examples-3.0.jar
+java -jar target/bootique-jetty-examples-4.0.jar
 ```
 
 ```  
 NAME
-      bootique-jetty-examples-3.0.jar
+      bootique-jetty-examples-4.0.jar
 
 OPTIONS
       -c yaml_location, --config=yaml_location
@@ -62,7 +63,7 @@ OPTIONS
 
 Start the server with the `-s` (`--server`) command:
 ```bash
-java -jar target/bootique-jetty-examples-3.0.jar -s
+java -jar target/bootique-jetty-examples-4.0.jar -s
 ```
 
 Go to http://localhost:8080/ and you should see an HTML page served from Jetty, with links to the URLs served via 
